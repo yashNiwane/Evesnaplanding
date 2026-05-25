@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://evesnap.app
+
+# Sitemaps
+Sitemap: https://evesnap.app/sitemap.xml
