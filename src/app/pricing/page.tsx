@@ -274,13 +274,16 @@ export default function PricingPage() {
       <footer className="relative z-10 border-t border-white/5 bg-black py-8 text-center text-xs text-neutral-500">
         <div className="mx-auto max-w-5xl flex flex-col justify-between items-center gap-4 px-4 sm:flex-row">
           <span>Creoxy — Capture together. Remember forever.</span>
-          <div className="flex gap-4">
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
+            <Link href="/terms" className="hover:text-white transition">Terms</Link>
+            <Link href="/privacy" className="hover:text-white transition">Privacy</Link>
+            <Link href="/refund" className="hover:text-white transition">Refund Policy</Link>
+            <Link href="/shipping" className="hover:text-white transition">Shipping</Link>
             <Link href="/" className="hover:text-white transition">Home</Link>
-            <Link href="/#story" className="hover:text-white transition">The Story</Link>
-            <Link href="/#how-it-works" className="hover:text-white transition">How it works</Link>
           </div>
         </div>
       </footer>
+
     </main>
   );
 }
