@@ -75,21 +75,7 @@ export default function RefundPage() {
             </div>
 
             <div>
-              <h2 className="text-lg font-bold text-white tracking-tight">2. Cancellation of Subscription</h2>
-              <p className="mt-3">
-                Hosts can stop auto-renewals for upcoming billing cycles at any time by cancelling their subscription through their account settings or letting us know on WhatsApp before the next billing date. Once cancelled, your subscription will not renew, and you will retain access to your hosted vaults until the end of the active billing cycle.
-              </p>
-            </div>
-
-            <div>
-              <h2 className="text-lg font-bold text-white tracking-tight">3. Exceptional Server Outages</h2>
-              <p className="mt-3">
-                In the highly unlikely event of total system downtime or server failure during your scheduled celebration date, hosts can get in touch with our Technical Support team on WhatsApp to request a complimentary extension of vault hosting, active events count, or custom event compensation.
-              </p>
-            </div>
-
-            <div>
-              <h2 className="text-lg font-bold text-white tracking-tight">4. Contact Information</h2>
+              <h2 className="text-lg font-bold text-white tracking-tight">2. Contact Information</h2>
               <p className="mt-3">
                 For questions regarding monthly plans, billing adjustments, or subscription renewals, please get in touch with us directly on WhatsApp at **+91 9356965876**.
               </p>
