@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://evesnap.app
+Host: https://creoxy.app
 
 # Sitemaps
-Sitemap: https://evesnap.app/sitemap.xml
+Sitemap: https://creoxy.app/sitemap.xml

@@ -11,13 +11,11 @@ import {
   ArrowRight,
   Camera,
   Check,
-  Eye,
   ImagePlus,
   Lock,
   QrCode,
   ScanLine,
   Settings2,
-  Share2,
   Sparkles,
   Users,
   Sparkle,
@@ -68,21 +66,21 @@ const steps = [
     text: "Set a custom name, upload a cover, define photo limits, and schedule when your gallery develops.",
     icon: Settings2,
     image: images.launch,
-    alt: "Evesnap event camera setup interface",
+    alt: "Creoxy event camera setup interface",
   },
   {
     title: "Place your unique QR code",
     text: "Print and place QR cards on tables, bar counters, or display them near the entrance for guests to scan.",
     icon: QrCode,
     image: images.hero,
-    alt: "Evesnap QR code placed beautifully on tables",
+    alt: "Creoxy QR code placed beautifully on tables",
   },
   {
     title: "Let the night develop",
     text: "Guests capture photos through their web browser directly into your private, real-time shared gallery.",
     icon: Camera,
     image: images.party,
-    alt: "Guests taking candid photos using Evesnap digital camera",
+    alt: "Guests taking candid photos using Creoxy digital camera",
   },
 ];
 
@@ -91,64 +89,64 @@ const comparisonData = [
     feature: "App Download Required",
     whatsapp: "No",
     gdrive: "No (but requires login)",
-    evesnap: "No (instant browser access)",
+    creoxy: "No (instant browser access)",
     highlight: true,
   },
   {
     feature: "Photo Quality Loss",
     whatsapp: "High (heavily compressed)",
     gdrive: "None",
-    evesnap: "None (original resolution)",
+    creoxy: "None (original resolution)",
     highlight: false,
   },
   {
     feature: "Upload Friction",
     whatsapp: "Manual select & send",
     gdrive: "High (find files, upload manually)",
-    evesnap: "Zero (photos capture directly to gallery)",
+    creoxy: "Zero (photos capture directly to gallery)",
     highlight: true,
   },
   {
     feature: "Organization",
     whatsapp: "Messy (scattered in personal chats)",
     gdrive: "Static folder",
-    evesnap: "Instant shared event gallery",
+    creoxy: "Instant shared event gallery",
     highlight: false,
   },
   {
     feature: "Privacy Controls",
     whatsapp: "Shared in broad groups",
     gdrive: "Access links",
-    evesnap: "Host-controlled secure vaults",
+    creoxy: "Host-controlled secure vaults",
     highlight: true,
   },
 ];
 
 const faq = [
   {
-    question: "What is Evesnap?",
+    question: "What is Creoxy?",
     answer:
-      "Evesnap is a premium, zero-friction shared camera experience for events. It lets your guests act as your photography team, capturing and saving photos directly into one shared gallery instantly using a simple QR code.",
+      "Creoxy is a premium, zero-friction shared camera experience for events. It lets your guests act as your photography team, capturing and saving photos directly into one shared gallery instantly using a simple QR code.",
   },
   {
     question: "Do guests need to install anything?",
     answer:
-      "No. Evesnap works entirely in the guest's mobile web browser. They simply scan the QR code and start snapping photos immediately. No accounts, no email signups, and zero downloads.",
+      "No. Creoxy works entirely in the guest's mobile web browser. They simply scan the QR code and start snapping photos immediately. No accounts, no email signups, and zero downloads.",
   },
   {
     question: "How does it protect our privacy?",
     answer:
-      "Unlike social media platforms, Evesnap is completely private. Only guests who scan your event's physical QR code or receive your secure invite link can view and contribute to the gallery. As the host, you hold absolute control over downloads and sharing.",
+      "Unlike social media platforms, Creoxy is completely private. Only guests who scan your event's physical QR code or receive your secure invite link can view and contribute to the gallery. As the host, you hold absolute control over downloads and sharing.",
   },
   {
     question: "Can I use it for weddings and small celebrations?",
     answer:
-      "Absolutely. Evesnap is designed specifically for high-emotion celebrations where the best memories are the unplanned ones—weddings, birthday parties, dinners, brand launches, and family gatherings.",
+      "Absolutely. Creoxy is designed specifically for high-emotion celebrations where the best memories are the unplanned ones—weddings, birthday parties, dinners, brand launches, and family gatherings.",
   },
   {
     question: "How does this compare to a WhatsApp group?",
     answer:
-      "WhatsApp compromises photo resolution and scatters memories across noisy chats. Evesnap keeps your photos organized in their original, high-resolution quality inside a beautiful, focused gallery that feels like a live digital scrapbook.",
+      "WhatsApp compromises photo resolution and scatters memories across noisy chats. Creoxy keeps your photos organized in their original, high-resolution quality inside a beautiful, focused gallery that feels like a live digital scrapbook.",
   },
 ];
 
@@ -193,9 +191,9 @@ const imageJsonLd: WithContext<ImageObject> = {
   "@context": "https://schema.org",
   "@type": "ImageObject",
   contentUrl: absoluteUrl(images.hero),
-  name: "Evesnap private event photo sharing app interface",
+  name: "Creoxy private event photo sharing app interface",
   description:
-    "A preview of the Evesnap shared event camera and private gallery experience.",
+    "A preview of the Creoxy shared event camera and private gallery experience.",
 };
 
 function JsonLd({ data }: { data: object }) {
@@ -236,18 +234,18 @@ export default function Home() {
             <div className="relative size-8 overflow-hidden rounded-full bg-neutral-900 border border-white/20">
               <Image
                 src={images.logo}
-                alt="Evesnap camera logo"
+                alt="Creoxy camera logo"
                 fill
                 className="object-cover p-1"
                 priority
               />
             </div>
-            <span className="bg-gradient-to-r from-white via-neutral-100 to-neutral-400 bg-clip-text text-transparent">Evesnap</span>
+            <span className="bg-gradient-to-r from-white via-neutral-100 to-neutral-400 bg-clip-text text-transparent">Creoxy</span>
           </Link>
           <div className="hidden items-center gap-8 text-[11px] font-medium uppercase tracking-[0.15em] text-neutral-400 md:flex">
             <a href="#story" className="transition hover:text-white">The Story</a>
             <a href="#how-it-works" className="transition hover:text-white">How it works</a>
-            <a href="#why-us" className="transition hover:text-white">Why Evesnap</a>
+            <a href="#why-us" className="transition hover:text-white">Why Creoxy</a>
             <Link href="/pricing" className="transition hover:text-white">Pricing</Link>
           </div>
           <a
@@ -291,7 +289,7 @@ export default function Home() {
             <div className="relative overflow-hidden rounded-xl border border-white/5 bg-black">
               <Image
                 src={images.hero}
-                alt="Evesnap app event photo sharing experience"
+                alt="Creoxy app event photo sharing experience"
                 width={1600}
                 height={900}
                 priority
@@ -403,7 +401,7 @@ export default function Home() {
               </div>
               <div className="space-y-4">
                 <div className="font-mono text-[10px] font-bold uppercase tracking-[0.2em] text-emerald-400">ACT IV — THE RESOLUTION</div>
-                <h3 className="text-2xl font-bold tracking-tight text-white sm:text-3xl">Evesnap. A vault of pure connection.</h3>
+                <h3 className="text-2xl font-bold tracking-tight text-white sm:text-3xl">Creoxy. A vault of pure connection.</h3>
                 <p className="text-sm leading-relaxed text-neutral-400">
                   We place a beautifully custom digital disposable camera in the hands of everyone who loves you. One elegant QR code. No apps, no accounts. Guests snap, and every angle develops instantly in original resolution inside one shared, private vault.
                 </p>
@@ -464,7 +462,7 @@ export default function Home() {
           <div className="text-center">
             <SectionLabel>THE COMPARISON</SectionLabel>
             <h2 className="mt-6 text-3xl font-extrabold tracking-tight sm:text-5xl bg-gradient-to-b from-white to-neutral-400 bg-clip-text text-transparent">
-              Why Evesnap beats everything else.
+              Why Creoxy beats everything else.
             </h2>
             <p className="mx-auto mt-4 max-w-md text-xs sm:text-sm text-neutral-400">
               A quick comparison of how we handle your life&apos;s most precious events.
@@ -478,7 +476,7 @@ export default function Home() {
                   <th className="px-6 py-4">Capability</th>
                   <th className="px-6 py-4">WhatsApp Groups</th>
                   <th className="px-6 py-4">Google Drive</th>
-                  <th className="px-6 py-4 text-violet-400">Evesnap Camera</th>
+                  <th className="px-6 py-4 text-violet-400">Creoxy Camera</th>
                 </tr>
               </thead>
               <tbody className="divide-y divide-white/5">
@@ -492,7 +490,7 @@ export default function Home() {
                     <td className="px-6 py-4 font-semibold text-white">{row.feature}</td>
                     <td className="px-6 py-4 text-neutral-400">{row.whatsapp}</td>
                     <td className="px-6 py-4 text-neutral-400">{row.gdrive}</td>
-                    <td className="px-6 py-4 font-semibold text-violet-300">{row.evesnap}</td>
+                    <td className="px-6 py-4 font-semibold text-violet-300">{row.creoxy}</td>
                   </tr>
                 ))}
               </tbody>
@@ -510,7 +508,7 @@ export default function Home() {
               Made for your life&apos;s biggest chapters.
             </h2>
             <p className="mx-auto mt-4 max-w-md text-xs sm:text-sm text-neutral-400">
-              No matter what you are celebrating, Evesnap brings everyone together.
+              No matter what you are celebrating, Creoxy brings everyone together.
             </p>
           </div>
 
@@ -523,7 +521,7 @@ export default function Home() {
                 <div className="relative aspect-[4/3] w-full overflow-hidden">
                   <Image
                     src={useCase.image}
-                    alt={`Evesnap ${useCase.label} event preview`}
+                    alt={`Creoxy ${useCase.label} event preview`}
                     fill
                     className="object-cover opacity-60 transition duration-500 group-hover:scale-105 group-hover:opacity-80"
                   />
@@ -549,7 +547,7 @@ export default function Home() {
                 One private, organized gallery for everyone.
               </h2>
               <p className="mt-4 text-sm leading-relaxed text-neutral-400">
-                Forget WhatsApp compression, complex logins, and expired download links. With Evesnap, you receive high-resolution, host-moderated folders that capture the joy of the party as it unfolds.
+                Forget WhatsApp compression, complex logins, and expired download links. With Creoxy, you receive high-resolution, host-moderated folders that capture the joy of the party as it unfolds.
               </p>
               <div className="mt-8 space-y-4">
                 {[
@@ -598,7 +596,7 @@ export default function Home() {
               Frequently asked questions.
             </h2>
             <p className="mx-auto mt-4 max-w-md text-xs sm:text-sm text-neutral-400">
-              Everything you need to know about the Evesnap event camera experience.
+              Everything you need to know about the Creoxy event camera experience.
             </p>
           </div>
 
@@ -651,7 +649,7 @@ export default function Home() {
       {/* Real Footer */}
       <footer className="relative z-10 border-t border-white/5 bg-black py-8 text-center text-xs text-neutral-500">
         <div className="mx-auto max-w-5xl flex flex-col justify-between items-center gap-4 px-4 sm:flex-row">
-          <span>Evesnap — Capture together. Remember forever.</span>
+          <span>Creoxy — Capture together. Remember forever.</span>
           <div className="flex gap-4">
             <a href="#story" className="hover:text-white transition">The Story</a>
             <a href="#how-it-works" className="hover:text-white transition">How it works</a>

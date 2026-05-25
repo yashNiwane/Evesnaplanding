@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   applicationName: siteConfig.name,
   title: {
     default:
-      "Evesnap - Private Event Photo Sharing App for Parties, Birthdays & Celebrations",
+      "Creoxy - Private Event Photo Sharing App for Parties, Birthdays & Celebrations",
     template: `%s | ${siteConfig.name}`,
   },
   description: siteConfig.description,
@@ -30,24 +30,25 @@ export const metadata: Metadata = {
     url: absoluteUrl("/"),
     siteName: siteConfig.name,
     title:
-      "Evesnap - Private Event Photo Sharing App for Parties, Birthdays & Celebrations",
+      "Creoxy - Private Event Photo Sharing App for Parties, Birthdays & Celebrations",
     description: siteConfig.description,
     images: [
       {
         url: absoluteUrl("/opengraph-image"),
         width: 1200,
         height: 630,
-        alt: "Evesnap private event photo sharing app",
+        alt: "Creoxy private event photo sharing app",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title:
-      "Evesnap - Private Event Photo Sharing App for Parties, Birthdays & Celebrations",
+      "Creoxy - Private Event Photo Sharing App for Parties, Birthdays & Celebrations",
     description: siteConfig.description,
     images: [absoluteUrl("/opengraph-image")],
   },
+
   robots: {
     index: true,
     follow: true,

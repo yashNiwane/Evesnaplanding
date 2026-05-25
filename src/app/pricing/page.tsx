@@ -4,9 +4,6 @@ import {
   ArrowRight,
   Check,
   Sparkle,
-  Sparkles,
-  Lock,
-  Camera,
   Database,
   CirclePercent,
   LineChart,
@@ -34,7 +31,7 @@ const plans = [
     ],
     highlight: false,
     ctaText: "Choose Lite Planner",
-    whatsappLink: "https://wa.me/919356965876?text=Hi%20Evesnap!%20I'm%20interested%20in%20subscribing%20to%20the%20Lite%20Planner%20monthly%20plan%20(₹999/mo)%20for%20my%20parties.",
+    whatsappLink: "https://wa.me/919356965876?text=Hi%20Creoxy!%20I'm%20interested%20in%20subscribing%20to%20the%20Lite%20Planner%20monthly%20plan%20(₹999/mo)%20for%20my%20parties.",
   },
   {
     name: "Professional Host",
@@ -52,7 +49,7 @@ const plans = [
     ],
     highlight: true,
     ctaText: "Choose Professional",
-    whatsappLink: "https://wa.me/919356965876?text=Hi%20Evesnap!%20I'm%20interested%20in%20subscribing%20to%20the%20Professional%20Host%20monthly%20plan%20(₹2,999/mo)%20for%20our%20events.",
+    whatsappLink: "https://wa.me/919356965876?text=Hi%20Creoxy!%20I'm%20interested%20in%20subscribing%20to%20the%20Professional%20Host%20monthly%20plan%20(₹2,999/mo)%20for%20our%20events.",
   },
   {
     name: "Elite Agency",
@@ -70,7 +67,7 @@ const plans = [
     ],
     highlight: false,
     ctaText: "Choose Elite Agency",
-    whatsappLink: "https://wa.me/919356965876?text=Hi%20Evesnap!%20I'm%20interested%20in%20subscribing%20to%20the%20Elite%20Agency%20monthly%20plan%20(₹9,999/mo)%20with%20white-label%20capabilities.",
+    whatsappLink: "https://wa.me/919356965876?text=Hi%20Creoxy!%20I'm%20interested%20in%20subscribing%20to%20the%20Elite%20Agency%20monthly%20plan%20(₹9,999/mo)%20with%20white-label%20capabilities.",
   },
 ];
 
@@ -98,22 +95,22 @@ export default function PricingPage() {
             <div className="relative size-8 overflow-hidden rounded-full bg-neutral-900 border border-white/20">
               <Image
                 src={images.logo}
-                alt="Evesnap camera logo"
+                alt="Creoxy camera logo"
                 fill
                 className="object-cover p-1"
                 priority
               />
             </div>
-            <span className="bg-gradient-to-r from-white via-neutral-100 to-neutral-400 bg-clip-text text-transparent">Evesnap</span>
+            <span className="bg-gradient-to-r from-white via-neutral-100 to-neutral-400 bg-clip-text text-transparent">Creoxy</span>
           </Link>
           <div className="hidden items-center gap-8 text-[11px] font-medium uppercase tracking-[0.15em] text-neutral-400 md:flex">
             <Link href="/#story" className="transition hover:text-white">The Story</Link>
             <Link href="/#how-it-works" className="transition hover:text-white">How it works</Link>
-            <Link href="/#why-us" className="transition hover:text-white">Why Evesnap</Link>
+            <Link href="/#why-us" className="transition hover:text-white">Why Creoxy</Link>
             <Link href="/pricing" className="text-white">Pricing</Link>
           </div>
           <a
-            href="https://wa.me/919356965876?text=Hi%20Evesnap!%20I'd%20love%20to%20get%20in%20touch%20about%20your%20shared%20camera%20packages."
+            href="https://wa.me/919356965876?text=Hi%20Creoxy!%20I'd%20love%20to%20get%20in%20touch%20about%20your%20shared%20camera%20packages."
             className="inline-flex h-9 items-center gap-1.5 rounded-full bg-white px-4 text-xs font-semibold text-black transition hover:bg-neutral-200"
           >
             Get in touch
@@ -195,7 +192,7 @@ export default function PricingPage() {
               <span className="font-mono text-[9px] font-bold uppercase tracking-[0.2em] text-violet-400">HOSTING & INFRASTRUCTURE</span>
               <h2 className="text-2xl font-bold tracking-tight text-white sm:text-3xl">Backed by enterprise-grade infrastructure.</h2>
               <p className="text-xs leading-relaxed text-neutral-400">
-                To guarantee original-resolution photo speeds and absolute data safety, every Evesnap subscription is deployed using **Supabase** (Postgres DB) and globally replicated Smart CDNs. We pay for premium compute resources so your memories are never delayed.
+                To guarantee original-resolution photo speeds and absolute data safety, every Creoxy subscription is deployed using **Supabase** (Postgres DB) and globally replicated Smart CDNs. We pay for premium compute resources so your memories are never delayed.
               </p>
             </div>
             <div className="grid gap-4 sm:grid-cols-2">
@@ -250,7 +247,7 @@ export default function PricingPage() {
               },
               {
                 q: "Do you offer white-label options for studios?",
-                a: "Yes! Our Elite Agency plan is specifically designed for premium photography studios and agencies who want to remove Evesnap branding and present their own logo on the guest browser camera.",
+                a: "Yes! Our Elite Agency plan is specifically designed for premium photography studios and agencies who want to remove Creoxy branding and present their own logo on the guest browser camera.",
               },
             ].map((item, idx) => (
               <details
@@ -276,7 +273,7 @@ export default function PricingPage() {
       {/* Footer */}
       <footer className="relative z-10 border-t border-white/5 bg-black py-8 text-center text-xs text-neutral-500">
         <div className="mx-auto max-w-5xl flex flex-col justify-between items-center gap-4 px-4 sm:flex-row">
-          <span>Evesnap — Capture together. Remember forever.</span>
+          <span>Creoxy — Capture together. Remember forever.</span>
           <div className="flex gap-4">
             <Link href="/" className="hover:text-white transition">Home</Link>
             <Link href="/#story" className="hover:text-white transition">The Story</Link>

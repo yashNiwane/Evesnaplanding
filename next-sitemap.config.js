@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://evesnap.app",
+  siteUrl: process.env.NEXT_PUBLIC_SITE_URL || "https://creoxy.app",
   generateRobotsTxt: true,
   sitemapSize: 7000,
   changefreq: "weekly",
