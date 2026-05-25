@@ -19,6 +19,9 @@ import {
   Sparkles,
   Users,
   Sparkle,
+  Heart,
+  Shield,
+  Eye,
 } from "lucide-react";
 import { absoluteUrl, siteConfig } from "@/lib/site";
 
@@ -35,19 +38,19 @@ const images = {
 
 const benefits = [
   {
-    title: "Zero Friction",
-    text: "No apps to download. Guests scan, open their browser camera, and snap instantly.",
+    title: "The Spectacle",
+    text: "Instant web-browser camera access. Scan a beautiful QR code, point, and shoot. Zero app downloads.",
     icon: ScanLine,
   },
   {
-    title: "Private Vault",
-    text: "Your gallery is private. No public social feeds, just the people you trust.",
-    icon: Lock,
+    title: "The Heart",
+    text: "Collect the quiet reactions, wild dance battles, and emotional hugs captured by those who love you.",
+    icon: Heart,
   },
   {
-    title: "Every Angle",
-    text: "Every guest becomes a photographer, capturing raw, candid moments you missed.",
-    icon: Users,
+    title: "The Trust",
+    text: "Private, host-controlled Postgres vaults. No public feeds, no selling data. Your memories stay yours.",
+    icon: Shield,
   },
 ];
 
@@ -62,22 +65,22 @@ const useCases = [
 
 const steps = [
   {
-    title: "Create your event camera",
-    text: "Set a custom name, upload a cover, define photo limits, and schedule when your gallery develops.",
+    title: "Set up the camera",
+    text: "Choose an elegant cover, define photo counts, and customize when your event album develops.",
     icon: Settings2,
     image: images.launch,
     alt: "Creoxy event camera setup interface",
   },
   {
-    title: "Place your unique QR code",
-    text: "Print and place QR cards on tables, bar counters, or display them near the entrance for guests to scan.",
+    title: "Share your QR canvas",
+    text: "Place stylized QR cards on dining tables, bar counters, or display screens for guests to discover.",
     icon: QrCode,
     image: images.hero,
     alt: "Creoxy QR code placed beautifully on tables",
   },
   {
-    title: "Let the night develop",
-    text: "Guests capture photos through their web browser directly into your private, real-time shared gallery.",
+    title: "Let the magic unfold",
+    text: "Guests capture candid snaps through their phone browser directly into one private shared vault.",
     icon: Camera,
     image: images.party,
     alt: "Guests taking candid photos using Creoxy digital camera",
@@ -86,38 +89,38 @@ const steps = [
 
 const comparisonData = [
   {
-    feature: "App Download Required",
-    whatsapp: "No",
-    gdrive: "No (but requires login)",
-    creoxy: "No (instant browser access)",
+    feature: "Instant Spectacle (No Apps)",
+    whatsapp: "No (Requires setup & group chats)",
+    gdrive: "No (Needs login / folder setups)",
+    creoxy: "Yes (Scan to snap instantly)",
     highlight: true,
   },
   {
-    feature: "Photo Quality Loss",
-    whatsapp: "High (heavily compressed)",
-    gdrive: "None",
-    creoxy: "None (original resolution)",
+    feature: "Zero Image Compression",
+    whatsapp: "No (Heavily compresses media)",
+    gdrive: "Yes",
+    creoxy: "Yes (Original uncompressed quality)",
     highlight: false,
   },
   {
-    feature: "Upload Friction",
-    whatsapp: "Manual select & send",
-    gdrive: "High (find files, upload manually)",
-    creoxy: "Zero (photos capture directly to gallery)",
+    feature: "Zero Friction Upload",
+    whatsapp: "Manual select & send in group",
+    gdrive: "High friction (Manual folders select)",
+    creoxy: "Zero friction (Direct camera syncing)",
     highlight: true,
   },
   {
-    feature: "Organization",
-    whatsapp: "Messy (scattered in personal chats)",
-    gdrive: "Static folder",
-    creoxy: "Instant shared event gallery",
+    feature: "Absolute Privacy & Security",
+    whatsapp: "Vulnerable to external phone lists",
+    gdrive: "Open access links",
+    creoxy: "Secure host-controlled database vaults",
     highlight: false,
   },
   {
-    feature: "Privacy Controls",
-    whatsapp: "Shared in broad groups",
-    gdrive: "Access links",
-    creoxy: "Host-controlled secure vaults",
+    feature: "Active Event Focus",
+    whatsapp: "Messy, cluttered personal chat",
+    gdrive: "Static storage bucket",
+    creoxy: "Beautiful live digital scrapbook",
     highlight: true,
   },
 ];
@@ -126,27 +129,27 @@ const faq = [
   {
     question: "What is Creoxy?",
     answer:
-      "Creoxy is a premium, zero-friction shared camera experience for events. It lets your guests act as your photography team, capturing and saving photos directly into one shared gallery instantly using a simple QR code.",
+      "Creoxy is not a utility—it is a digital sandbox for your memories. It turns your guests into a cohesive storytelling team, capturing raw, unposed photos directly into one shared gallery instantly using a simple QR code.",
   },
   {
-    question: "Do guests need to install anything?",
+    question: "How do guests join the spectacle?",
     answer:
-      "No. Creoxy works entirely in the guest's mobile web browser. They simply scan the QR code and start snapping photos immediately. No accounts, no email signups, and zero downloads.",
+      "With zero friction. Guests scan your event's physical QR code with their phone camera, and their browser opens into a beautiful digital camera interface. No apps, no accounts, and no setup required.",
   },
   {
-    question: "How does it protect our privacy?",
+    question: "How do you protect guest privacy?",
     answer:
-      "Unlike social media platforms, Creoxy is completely private. Only guests who scan your event's physical QR code or receive your secure invite link can view and contribute to the gallery. As the host, you hold absolute control over downloads and sharing.",
+      "Trust is our bedrock. Creoxy is built with secure Row-Level database encryption. Only guests holding your physical QR code or secure link can contribute. We never sell your photographs or analyze your personal metadata.",
   },
   {
     question: "Can I use it for weddings and small celebrations?",
     answer:
-      "Absolutely. Creoxy is designed specifically for high-emotion celebrations where the best memories are the unplanned ones—weddings, birthday parties, dinners, brand launches, and family gatherings.",
+      "Yes. Creoxy is designed specifically for emotional milestones where the real magic happens in the corners of the room—unplanned laughs, family tears, and spontaneous dance battles.",
   },
   {
-    question: "How does this compare to a WhatsApp group?",
+    question: "How does this compare to WhatsApp groups?",
     answer:
-      "WhatsApp compromises photo resolution and scatters memories across noisy chats. Creoxy keeps your photos organized in their original, high-resolution quality inside a beautiful, focused gallery that feels like a live digital scrapbook.",
+      "WhatsApp compromises resolution and scatters photos across generic, noisy chats. Creoxy keeps your photos organized in their original, high-resolution quality inside a private gallery that belongs strictly to you.",
   },
 ];
 
@@ -224,7 +227,7 @@ export default function Home() {
 
       {/* Background Ambient Glows */}
       <div className="absolute top-[-10%] left-[-10%] ambient-glow" />
-      <div className="absolute top-[30%] right-[-10%] ambient-glow" />
+      <div className="absolute top-[35%] right-[-15%] ambient-glow" />
       <div className="absolute bottom-[20%] left-[5%] ambient-glow" />
 
       {/* Floating Glassmorphic Navigation */}
@@ -261,12 +264,12 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative z-10 px-4 pt-32 pb-16 md:px-8 md:pt-40">
         <div className="mx-auto max-w-5xl text-center">
-          <SectionLabel>THE SHARED EVENT CAMERA</SectionLabel>
+          <SectionLabel>THE SPECTACLE</SectionLabel>
           <h1 className="mx-auto mt-6 max-w-4xl text-4xl font-extrabold leading-[1.08] tracking-tight sm:text-6xl md:text-7xl lg:text-8xl bg-gradient-to-b from-white via-neutral-100 to-neutral-500 bg-clip-text text-transparent">
             Your guests see the moments you miss.
           </h1>
           <p className="mx-auto mt-6 max-w-xl text-sm leading-relaxed text-neutral-400 sm:text-base md:text-lg">
-            A digital disposable camera on every table. Guests simply scan, snap in their browser, and save every laugh, dance, and tear to one private gallery. Zero app downloads. Zero friction.
+            A digital disposable camera on every table. A single night becomes timeless when remembered together. Guests scan, snap, and preserve the genuine warmth of your celebration.
           </p>
           <div className="mt-8 flex flex-col justify-center gap-3.5 sm:flex-row">
             <a
@@ -296,6 +299,27 @@ export default function Home() {
                 className="w-full h-auto object-cover opacity-90"
               />
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Founder's Manifesto / Philosophy Section */}
+      <section className="relative z-10 px-4 py-16 md:px-8">
+        <div className="mx-auto max-w-4xl rounded-3xl border border-white/5 bg-neutral-950/60 p-8 md:p-12 shadow-[0_0_40px_rgba(0,0,0,0.6)] relative overflow-hidden">
+          {/* Subtle violet overlay */}
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,rgba(139,92,246,0.08)_0%,rgba(0,0,0,0)_60%)]" />
+          <div className="relative z-10 flex flex-col items-center text-center">
+            <SectionLabel>THE CREED</SectionLabel>
+            <p className="mt-8 text-lg sm:text-2xl md:text-3xl font-extrabold leading-snug tracking-tight text-white/95 max-w-3xl italic">
+              &ldquo;Your story is the product before your product is the product. Spectacle is what gets people through the door. Trust is what makes them stay. You need both.&rdquo;
+            </p>
+            <div className="mt-8 border-t border-white/10 pt-4 w-1/4" />
+            <p className="mt-2 text-xs uppercase tracking-wider text-neutral-500 font-bold">
+              The Creoxy Philosophy
+            </p>
+            <p className="mt-3 max-w-lg text-[11px] sm:text-xs text-neutral-400/80 leading-relaxed">
+              People don’t subscribe because a utility exists. They subscribe because a story makes them feel something first. We built this platform strictly on this foundation.
+            </p>
           </div>
         </div>
       </section>
@@ -659,7 +683,6 @@ export default function Home() {
           </div>
         </div>
       </footer>
-
     </main>
   );
 }
