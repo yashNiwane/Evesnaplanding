@@ -100,7 +100,7 @@ export default function PrivacyPage() {
             <div>
               <h2 className="text-lg font-bold text-white tracking-tight">6. Support & Deletion Requests</h2>
               <p className="mt-3">
-                If you have questions about your data safety or wish to request permanent manual deletion of your billing account and hosted projects, please contact us on WhatsApp directly.
+                If you have questions about your data safety or wish to request permanent manual deletion of your billing account and hosted projects, please contact us directly via email at **niwaneyash@gmail.com** or on WhatsApp at **+91 9356965876**.
               </p>
             </div>
           </div>

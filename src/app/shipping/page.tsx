@@ -96,7 +96,7 @@ export default function ShippingPage() {
             <div>
               <h2 className="text-lg font-bold text-white tracking-tight">4. Contact Information</h2>
               <p className="mt-3">
-                For delivery verification, login troubleshooting, or billing queries, please contact us directly on WhatsApp at **+91 9356965876**.
+                For delivery verification, login troubleshooting, or billing queries, please contact us directly via email at **niwaneyash@gmail.com** or on WhatsApp at **+91 9356965876**.
               </p>
             </div>
           </div>

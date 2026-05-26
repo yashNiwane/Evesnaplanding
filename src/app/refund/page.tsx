@@ -77,7 +77,7 @@ export default function RefundPage() {
             <div>
               <h2 className="text-lg font-bold text-white tracking-tight">2. Contact Information</h2>
               <p className="mt-3">
-                For questions regarding monthly plans, billing adjustments, or subscription renewals, please get in touch with us directly on WhatsApp at **+91 9356965876**.
+                For questions regarding monthly plans, billing adjustments, or subscription renewals, please get in touch with us directly via email at **niwaneyash@gmail.com** or on WhatsApp at **+91 9356965876**.
               </p>
             </div>
           </div>

@@ -104,6 +104,13 @@ export default function TermsPage() {
                 We reserve the right to modify these terms at any time. Your continued use of Creoxy following the posting of changes constitutes acceptance of those modifications.
               </p>
             </div>
+
+            <div>
+              <h2 className="text-lg font-bold text-white tracking-tight">7. Contact Information</h2>
+              <p className="mt-3">
+                For questions regarding these terms, monthly plans, or subscription agreements, please contact us directly via email at **niwaneyash@gmail.com** or on WhatsApp at **+91 9356965876**.
+              </p>
+            </div>
           </div>
         </div>
       </section>
